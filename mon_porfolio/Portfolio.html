@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, maximum-scale=1, initial-scale=1.0, maximum-scale=1">
+    <meta name="author" content="Tiemtoré Emmanuel Landry">
+    <meta name="description" content="Se site est le portfolio de Tiemtoré Emmanuel Landry, n'oubliez de le  visiter si pour en apprendre beaucoups plus sur moi." />
+    <meta name=”keywords” content="<?= WEBSITE_KEYWORDS?>"/>
+    <meta name="Reply-to" content="emmanuellandrytiemtore@gmail.com">
+    <meta name="Copyright" content="Tiemtoré Emmanuel Landry">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+
+    <!-- Open Graph tags -->
+    <meta property="og:type"              content="website" />
+    <meta property="og:url"               content="<?= WEBSITE_FACEBOOK_URL?>" />
+    <meta property="og:title"             content="<?= WEBSITE_FACEBOOK_NAME?>" />
+    <meta property="og:description"       content="<?= WEBSITE_FACEBOOK_DESCRIPTION?>" />
+    <meta property="og:image"             content="<?= WEBSITE_FACEBOOK_IMAGE?>" />
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/portfolio.css"/>
+</head>
+
+
+<body>
+
+    <!-- HEADER COMPOSER DE DU MENU ET DU HAUT DE LA PAGE -->
+    <header>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="containeur_nav">
+                    <li><h3 class="titre">PORTFOLIO</h3></li>
+					<li><a href="#haut"> <span class="right">Accueil</span></a></li>
+					<li><a href="#projet"><span class="right">Projets</span></a></li>
+					<li><a href="#portfolio"><span class="right">Voir CV</span></a></li>
+					<li><a href="#contact"><span class="right">Contact</span></a></li>
+				</ul>
+				<div id="haut"><p>HAUT</p></div>
+			</nav>
+
+		<!-- HAUT DE LA PAGE -->
+	        <div class="containeur_haut" >
+				<article>
+                    <div id="haut_page">
+
+						<div id="element_containeur_haut" class="image">
+							<span class="image_profil"><img src="assets/images/picOO1.png" alt="image de profil" /></span>
+						</div>
+
+						<div id="element_containeur_haut">
+							<span>
+							<header>
+								<h1>Salut. Je suis <strong>Landry Tiemtoré</strong>.</h1>
+							</header>
+							<p class="presentation">
+                                je suis développeur web full-stack, je serai ravis de vous aider dans vos projets. je peux réaliser des sites web en tout genre. Récemment, j'ai travailler sur divers projets en HTML5/CSS3, Javascript, PHP, SQL. 
+                            </p>
+							<p>
+								Cliquez sur le bouton pour en savoir plus.
+							</p>
+							<br> <br> <br>
+                            <p>
+							<a href="#projet" class="button_projet"><strong>Projets Récents</strong></a> <a href="#" class="button_projet"><strong>voir mon CV</strong></a>
+                            </p>
+							</span>
+					    </div>
+                    </div>
+				</article>
+			</div>
+    </header>
+		
+
+
+<!-- Portfolio -->
+           <article id="projet">
+			  <div class="projet">
+					<header>
+						<h2>Mes rescent projets.</h2>
+						<p>Dans cette section vous apprendrai plus sur les derniers projets que j'ai eu à réaliser.</p>
+					</header>
+					<div class="containeur_projet">
+						<div class="row">
+							<div class="4u 12u(mobile)">
+								<article class="element_containeur_projet">
+									<a href="#" class="image featured"><img src="assets/images/pic01.jpg" alt="" /></a>
+									<h3><a href="#">Magna feugiat</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="element_containeur_projet">
+									<a href="#" class="image featured"><img src="assets/images/pic02.jpg" alt="" /></a>
+									<h3><a href="#">Veroeros primis</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="element_containeur_projet">
+									<a href="#" class="image featured"><img src="assets/images/pic03.jpg" alt="" /></a>
+									<h3><a href="#">Lorem ipsum</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u 12u(mobile)">
+								<article class="element_containeur_projet">
+									<a href="#" class="image featured"><img src="assets/images/pic04.jpg" alt="" /></a>
+									<h3><a href="#">Tempus dolore</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="element_containeur_projet">
+									<a href="#" class="image featured"><img src="assets/images/pic05.jpg" alt="" /></a>
+									<h3><a href="#">Feugiat aliquam</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="element_containeur_projet">
+									<a href="#" class="image featured"><img src="assets/images/pic06.jpg" alt="" /></a>
+									<h3><a href="#">Sed amet ornare</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#contact" class="button_contact">Contactez moi</a>
+					</footer>
+			  </div>
+			  <div id="contact"></div>
+			</article>
+
+								
+<div class="wrapper_style4">
+  <section id="contacts">
+    <h2>Contactez-moi via ce formulaire</h2>
+    <p>Laissez-moi un message et je vous répondrai, promis !</p>
+    <form method="post" action="#">
+      <div class="champs_double">
+        <input type="text" name="name" id="name" placeholder="NOM" />
+        <input type="email" name="email" id="email" placeholder="MAIL" />
+      </div>
+      <input type="text" name="subject" id="subject" placeholder="OBJET" />
+      <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
+      <div class="button_form">
+        <input type="submit" value="Envoyer Formulaire" />
+        <input type="reset" value="Effacer Formulaire" />
+      </div>
+    </form>
+  </section>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer_reseau">
+	<div class="bord_reseau">
+  <hr />
+	<br>
+  <h3>Mes réseaux sociaux...</h3>
+  <ul class="social">
+    <li><a href="#" class="fa-brands fa-twitter"><span class="element_containeur_reseau">Twitter</span></a></li>
+    <li><a href="#" class="fa-brands fa-facebook"><span class="element_containeur_reseau">Facebook</span></a></li>
+    <li><a href="#" class="fa-brands fa-linkedin"><span class="element_containeur_reseau">LinkedIn</span></a></li>
+    <li><a href="#" class="fa-brands fa-github"><span class="element_containeur_reseau">Github</span></a></li>
+  </ul>
+  
+  </div>
+  
+  <br>
+  <p>© Copyright. Tous droits réservés. Design: <a href="#haut">Landry Tiemtoré</div></p>
+	
+</footer>
+
+
+
+    </body>
+</html>
