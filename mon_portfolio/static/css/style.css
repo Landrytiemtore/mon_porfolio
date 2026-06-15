@@ -1,0 +1,779 @@
+/*-----------------------------------------------------------------------*/
+/*                                                                       */
+/*                  MISE EN FORME GENERALE DU SITE                       */
+/*                                                                       */
+/*-----------------------------------------------------------------------*/
+
+:root {
+    --primary-color: #e89090;
+    --secondary-color: #373434;
+    --text-color: antiquewhite;
+    --background-color: #000000;
+    --hover-color: #ffffff;
+    --accent-color: #1DA1F2;
+    --border-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/*-----------------------------------------------------------------------*/
+/*                                                                       */
+/*                  MISE EN FORME DES LIENS ET DES LISTES                */
+/*                                                                       */
+/*-----------------------------------------------------------------------*/
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+/*-----------------------------------------------------------------------*/
+/*                                                                       */
+/*                  MISE EN FORME DE LA NAV BAR                          */
+/*                                                                       */
+/*-----------------------------------------------------------------------*/
+
+/* mise en forme de la bar de navigation en générale */
+.containeur_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    justify-content: flex-end;
+    min-height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    padding: 0 2%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* mise en forme des éléments spécifiques de la bar de navigation */
+.containeur_nav li {
+    margin: 0 15px;
+}
+
+.containeur_nav a {
+    color: var(--text-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* mise en forme des liens pendant le hover */
+.containeur_nav a:hover {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    transform: translateY(-2px);
+}
+
+/* mise en forme du titre du site */
+.titre {
+    color: var(--text-color);
+    margin-right: auto;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------------------*/
+/*                                                                       */
+/*                  MISE EN FORME DU HAUT DE PAGE                        */
+/*                                                                       */
+/*-----------------------------------------------------------------------*/
+
+/* Mise en forme du haut de la page en générale */
+.containeur_haut {
+    margin: 20px;
+    padding: 40px 20px;
+    margin-top: 90px;
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(32,29,29,0.8) 0%, rgba(0,0,0,0.9) 100%);
+}
+
+#haut_page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* mise en forme de l'image de profil */
+.image_profil img {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    display: block;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image_profil img:hover {
+    transform: scale(1.05);
+}
+
+/* mise en forme du message du haut de page */
+#element_containeur_haut:last-child {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+#element_containeur_haut h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+#element_containeur_haut strong {
+    color: var(--primary-color);
+}
+
+.presentation {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.boutons-accueil {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* mise en formme du boutton */
+.button_projet {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    min-width: 200px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* mise en forme du boutton l'orsqu'on clique dessus */
+.button_projet:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* mise en forme du boutton l'orsque la souris survole */
+.button_projet:hover {
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*-----------------------------------------------------------------------*/
+/*                                                                       */
+/*                  MISE EN FORME DE LA PARTIE PROJET                    */
+/*                                                                       */
+/*-----------------------------------------------------------------------*/
+
+/* Mise en forme de la partie projet en générale */
+.projet {
+    color: var(--text-color);
+    text-align: center;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 50px 20px;
+    margin-top: 100px;
+    background-color: var(--secondary-color);
+}
+
+.projet header {
+    margin-bottom: 50px;
+}
+
+.projet h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.projet p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Réglage de la disposition des images */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.projet-item {
+    flex: 1 1 300px;
+    max-width: 350px;
+}
+
+/* Mise en forme du message de description des projet */
+.element_containeur_projet {
+    background-color: var(--background-color);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.element_containeur_projet:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.element_containeur_projet .image featured {
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.element_containeur_projet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.element_containeur_projet:hover img {
+    transform: scale(1.05);
+}
+
+.element_containeur_projet h3 {
+    margin: 15px 0 10px;
+}
+
+.element_containeur_projet h3 a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.element_containeur_projet h3 a:hover {
+    color: var(--primary-color);
+}
+
+.element_containeur_projet p {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+/* Mise en forme du bouton contactez moi */
+.button_contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    min-width: 200px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* mise en forme du boutton l'orsqu'on clique dessus */
+.button_contact:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* mise en forme du boutton l'orsque la souris survole */
+.button_contact:hover {
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*-----------------------------------------------------------------------*/
+/*                                                                       */
+/*                MISE EN FORME DE LA PARTIE CV                          */
+/*                                                                       */
+/*-----------------------------------------------------------------------*/
+
+.cv-container {
+    color: var(--text-color);
+    text-align: center;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 50px 20px;
+    margin-top: 100px;
+    background-color: var(--secondary-color);
+}
+
+.cv-container header {
+    margin-bottom: 30px;
+}
+
+.cv-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.cv-container p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.cv-download {
+    margin-top: 20px;
+}
+
+.button_cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    min-width: 250px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button_cv:hover {
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*-----------------------------------------------------------------------*/
+/*                                                                       */
+/*                MISE EN FORME DE LA PARTIE CONTACT                     */
+/*                                                                       */
+/*-----------------------------------------------------------------------*/
+
+/* Conteneur général */
+.wrapper_style4 {
+    position: relative;
+    margin-top: 100px;
+    border: 1px solid var(--border-color);
+    margin: 20px;
+    padding: 3em 2em;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+/* Section centrée */
+#contacts {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contacts h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#contacts p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Champs nom + email en ligne */
+.champs_double {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.champs_double input {
+    flex: 1 1 300px;
+}
+
+/* Tous les champs ont la même largeur */
+input[type="text"],
+input[type="email"],
+#subject,
+textarea {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--background-color);
+    border: 1px solid transparent;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+/* Placeholder styling */
+::placeholder {
+    color: #aaa;
+}
+
+/* Bordure visible au focus */
+input:focus,
+textarea:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+/* Espacement entre les champs */
+#subject {
+    margin-bottom: 1em;
+}
+
+#message {
+    margin-bottom: 1em;
+    height: 150px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Boutons */
+.button_form {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.button_form input {
+    background-color: var(--text-color);
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    color: var(--background-color);
+    min-width: 180px;
+}
+
+.button_form input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transform: translateY(-2px);
+}
+
+.button_form input[type="reset"]:hover {
+    /*background-color: #ccc;*/
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Messages de statut du formulaire */
+.form-status {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-status.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-status.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/*-----------------------------------------------------------------------*/
+/*                                                                       */
+/*                MISE EN FORME DU FOOTER                                */
+/*                                                                       */
+/*-----------------------------------------------------------------------*/
+
+/* Footer général */
+.footer_reseau {
+    position: relative;
+    margin-top: 100px;
+    padding: 3em 2em;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.bord_reseau {
+    border: 1px solid var(--border-color);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+footer h3 {
+    color: var(--text-color);
+    margin-bottom: 1.5em;
+    font-size: 1.8em;
+}
+
+/* Liste des réseaux sociaux */
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+/* Icônes et noms */
+.social a {
+    text-decoration: none;
+    font-size: 1.8em;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.element_containeur_reseau {
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+/* Hover avec couleurs réelles des logos */
+.social a.fa-twitter:hover {
+    color: #1DA1F2;
+    transform: translateY(-5px);
+}
+
+.social a.fa-facebook:hover {
+    color: #1877F2;
+    transform: translateY(-5px);
+}
+
+.social a.fa-linkedin:hover {
+    color: #0A66C2;
+    transform: translateY(-5px);
+}
+
+.social a.fa-github:hover {
+    color: #6e5494;
+    transform: translateY(-5px);
+}
+
+.footer_reseau > p {
+    margin-top: 2em;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.footer_reseau a {
+    color: var(--primary-color);
+}
+
+.footer_reseau a:hover {
+    text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------------*/
+/*                                                                       */
+/*                MEDIA QUERIES - RESPONSIVE DESIGN                      */
+/*                                                                       */
+/*-----------------------------------------------------------------------*/
+
+@media (max-width: 1024px) {
+    .containeur_nav {
+        padding: 0 5%;
+    }
+    
+    .titre {
+        margin-right: auto;
+    }
+    
+    #haut_page {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .image_profil img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containeur_nav {
+        flex-direction: column;
+        min-height: auto;
+        padding: 15px;
+    }
+    
+    .containeur_nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .containeur_nav li {
+        margin: 5px;
+    }
+    
+    .titre {
+        margin: 0 0 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .containeur_haut {
+        margin-top: 150px;
+    }
+    
+    .boutons-accueil {
+        justify-content: center;
+    }
+    
+    .button_projet {
+        min-width: 150px;
+    }
+    
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projet-item {
+        max-width: 100%;
+    }
+    
+    #contacts {
+        width: 100%;
+    }
+    
+    .champs_double {
+        flex-direction: column;
+    }
+    
+    .social {
+        gap: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    .containeur_haut {
+        margin: 10px;
+        padding: 20px 10px;
+    }
+    
+    .image_profil img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .projet, .cv-container, .wrapper_style4 {
+        margin: 10px;
+        padding: 30px 15px;
+    }
+    
+    .button_form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .button_form input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- =========================================================== -->
+    <!--                       META-INFORMATIONS                     -->
+    <!-- =========================================================== -->
+    
+    <!-- Encodage des caractères -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Configuration viewport pour le responsive -->
+    <meta name="viewport" content="width=device-width, user-scalable=0, maximum-scale=1, initial-scale=1.0, maximum-scale=1">
+    
+    <!-- Informations sur l'auteur -->
+    <meta name="author" content="Tiemtoré Emmanuel Landry">
+    
+    <!-- Description pour le référencement -->
+    <meta name="description" content="Ce site est le portfolio de Tiemtoré Emmanuel Landry, n'oubliez pas de le visiter pour en apprendre beaucoup plus sur moi." />
+    
+    <!-- Mots-clés pour le SEO -->
+    <meta name="keywords" content="portfolio, développeur web, full-stack, HTML, CSS, JavaScript, PHP, SQL"/>
+    
+    <!-- Contact et droits d'auteur -->
+    <meta name="Reply-to" content="emmanuellandrytiemtore@gmail.com">
+    <meta name="Copyright" content="Tiemtoré Emmanuel Landry">
+    
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- =========================================================== -->
+    <!--                      META OPEN GRAPH                        -->
+    <!-- =========================================================== -->
+    
+    <!-- Balises pour le partage sur les réseaux sociaux -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://votresite.com" />
+    <meta property="og:title" content="Portfolio Landry Tiemtoré" />
+    <meta property="og:description" content="Développeur web full-stack - Portfolio" />
+    <meta property="og:image" content="https://votresite.com/images/og-image.jpg" />
+
+    <!-- =========================================================== -->
+    <!--                          FEUILLES DE STYLE                  -->
+    <!-- =========================================================== -->
+    <!--{{ url_for('static', filename='css/portfolio.css') }}-->
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="../static/css/portfolio.css"/>
+</head>
+
+<body>
+
+    <!-- =========================================================== -->
+    <!--                          EN-TÊTE                           -->
+    <!-- =========================================================== -->
+    <header>
+
+        <!-- =========================================================== -->
+        <!--                      BARRE DE NAVIGATION                   -->
+        <!-- =========================================================== -->
+        <nav id="nav">
+            <ul class="containeur_nav">
+                <!-- Logo/Titre du site -->
+                <li><h3 class="titre">PORTFOLIO</h3></li>
+                
+                <!-- Liens de navigation -->
+                <li><a href="#haut"> <span class="right">Accueil</span></a></li>
+                <li><a href="#projet"><span class="right">Projets</span></a></li>
+                <li><a href="#portfolio"><span class="right">Voir CV</span></a></li>
+                <li><a href="#reseaux"><span class="right">Contact</span></a></li>
+            </ul>
+            
+            <!-- Ancre pour retour en haut -->
+            <div id="haut"><p>HAUT</p></div>
+        </nav>
+
+        <!-- =========================================================== -->
+        <!--                      SECTION HERO                         -->
+        <!-- =========================================================== -->
+        <div class="containeur_haut">
+            <article>
+                <div id="haut_page">
+
+                    <!-- Photo de profil -->
+                    <div id="element_containeur_haut" class="image">
+                        <span class="image_profil">
+                            <img src="../static/images/pic0.jpg" alt="Photo de profil de Landry Tiemtoré" />
+                        </span>
+                    </div>
+
+                    <!-- Présentation personnelle -->
+                    <div id="element_containeur_haut">
+                        <span>
+                            <header>
+                                <h1>Salut. Je suis <strong>Landry Tiemtoré</strong>.</h1>
+                            </header>
+                            
+                            <!-- Description du profil -->
+                            <p class="presentation">
+                                Je suis développeur web full-stack, je serai ravi de vous aider dans vos projets. 
+                                Je peux réaliser des sites web en tout genre. Récemment, j'ai travaillé sur divers 
+                                projets en HTML5/CSS3, JavaScript, PHP, SQL.
+                            </p>
+                            
+                            <!-- Appel à l'action -->
+                            <p>
+                                Cliquez sur le bouton pour en savoir plus.
+                            </p>
+                            
+                            <br> <br> <br>
+                            
+                            <!-- Boutons d'action -->
+                            <p>
+                                <a href="#projet" class="button_projet"><strong>Projets Récents</strong></a> 
+                                <a href="#" class="button_projet"><strong>Voir mon CV</strong></a>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </header>
+
+    <!-- =========================================================== -->
+    <!--                      SECTION PROJETS                        -->
+    <!-- =========================================================== -->
+    <article id="projet">
+        <div class="projet">
+            <header>
+                <h2>Mes récents projets</h2>
+                <p>Dans cette section vous apprendrez plus sur les derniers projets que j'ai eu à réaliser.</p>
+            </header>
+            
+            <!-- =========================================================== -->
+            <!--                    GRILLE DE PROJETS                       -->
+            <!-- =========================================================== -->
+            <div class="containeur_projet">
+                
+                <!-- Première ligne de projets -->
+                <div class="row">
+                    
+                    <!-- Projet 1 -->
+                    <div class="4u 12u(mobile)">
+                        <article class="element_containeur_projet">
+                            <a href="#" class="image featured">
+                                <img src="../static/images/pic01.jpg" alt="Capture d'écran du projet Magna feugiat" />
+                            </a>
+                            <h3><a href="#">Magna feugiat</a></h3>
+                            <p>Ornare nulla proin odio consequat.</p>
+                        </article>
+                    </div>
+                    
+                    <!-- Projet 2 -->
+                    <div class="4u 12u(mobile)">
+                        <article class="element_containeur_projet">
+                            <a href="#" class="image featured">
+                                <img src="../static/images/pic02.jpg" alt="Capture d'écran du projet Veroeros primis" />
+                            </a>
+                            <h3><a href="#">Veroeros primis</a></h3>
+                            <p>Ornare nulla proin odio consequat.</p>
+                        </article>
+                    </div>
+                    
+                    <!-- Projet 3 -->
+                    <div class="4u 12u(mobile)">
+                        <article class="element_containeur_projet">
+                            <a href="#" class="image featured">
+                                <img src="../static/images/pic03.jpg" alt="Capture d'écran du projet Lorem ipsum" />
+                            </a>
+                            <h3><a href="#">  </a></h3>
+                            <p>Ornare nulla proin odio consequat.</p>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Deuxième ligne de projets -->
+                <div class="row">
+                    
+                    <!-- Projet 4 -->
+                    <div class="4u 12u(mobile)">
+                        <article class="element_containeur_projet">
+                            <a href="#" class="image featured">
+                                <img src="../static/images/pic04.jpg" alt="Capture d'écran du projet Tempus dolore" />
+                            </a>
+                            <h3><a href="#">Tempus dolore</a></h3>
+                            <p>Ornare nulla proin odio consequat.</p>
+                        </article>
+                    </div>
+                    
+                    <!-- Projet 5 -->
+                    <div class="4u 12u(mobile)">
+                        <article class="element_containeur_projet">
+                            <a href="#" class="image featured">
+                                <img src="../static/images/pic05.jpg" alt="Capture d'écran du projet Feugiat aliquam" />
+                            </a>
+                            <h3><a href="#">Feugiat aliquam</a></h3>
+                            <p>Ornare nulla proin odio consequat.</p>
+                        </article>
+                    </div>
+                    
+                    <!-- Projet 6 -->
+                    <div class="4u 12u(mobile)">
+                        <article class="element_containeur_projet">
+                            <a href="#" class="image featured">
+                                <img src="../static/images/pic06.jpg" alt="Capture d'écran du projet Sed amet ornare" />
+                            </a>
+                            <h3><a href="#">Sed amet ornare</a></h3>
+                            <p>Ornare nulla proin odio consequat.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pied de section projets -->
+            <footer>
+                <p>Intéressé par mon travail ? N'hésitez pas à me contacter !</p>
+                <a href="#contact" class="button_contact">Contactez-moi</a>
+            </footer>
+        </div>
+        
+        <!-- Ancre pour la section contact -->
+        <div id="contact"></div>
+    </article>
+
+    <!-- =========================================================== -->
+    <!--                    MESSAGES FLASH                           -->
+    <!-- =========================================================== -->
+    
+    <!-- Affichage des messages de confirmation/erreur du formulaire -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- =========================================================== -->
+    <!--                    SECTION CONTACT                          -->
+    <!-- =========================================================== -->
+    <div class="wrapper_style4">
+        <section id="contacts">
+            <header>
+                <h2>Contactez-moi via ce formulaire</h2>
+                <p>Laissez-moi un message et je vous répondrai, promis !</p>
+            </header>
+            
+            <!-- =========================================================== -->
+            <!--                    FORMULAIRE DE CONTACT                    -->
+            <!-- =========================================================== -->
+            <form method="post" action="{{ url_for('contact') }}">
+                
+                <!-- Champs nom et email côte à côte -->
+                <div class="champs_double">
+                    <input type="text" name="name" id="name" placeholder="NOM" required 
+                           title="Veuillez entrer votre nom complet" />
+                    <input type="email" name="email" id="email" placeholder="MAIL" required 
+                           title="Veuillez entrer une adresse email valide" />
+                </div>
+                
+                <!-- Champ sujet -->
+                <input type="text" name="subject" id="subject" placeholder="OBJET" required 
+                       title="Veuillez indiquer l'objet de votre message" />
+                
+                <!-- Zone de message -->
+                <textarea name="message" id="message" placeholder="MESSAGE" required 
+                          title="Veuillez écrire votre message"></textarea>
+                
+                <!-- Boutons d'action du formulaire -->
+                <div class="button_form">
+                    <input type="submit" value="Envoyer Formulaire" />
+                    <input type="reset" value="Effacer Formulaire" />
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!-- =========================================================== -->
+    <!--                         PIED DE PAGE                        -->
+    <!-- =========================================================== -->
+    <footer class="footer_reseau">
+        <div id="reseaux"></div>
+        <div class="bord_reseau">
+            <hr />
+            <br>
+            
+            <!-- Titre réseaux sociaux -->
+            <h3>Mes réseaux sociaux...</h3>
+            
+            <!-- =========================================================== -->
+            <!--                    ICÔNES RÉSEAUX SOCIAUX                  -->
+            <!-- =========================================================== -->
+            <ul class="social">
+                
+                <!-- Twitter -->
+                <li>
+                    <a href="https://wa.me/22607487058" class="fa-brands fa-whatsapp" aria-label="Profil Whatsapp">
+                        <span class="element_containeur_reseau">Whatsapp</span>
+                    </a>
+                </li>
+                
+                <!-- Facebook -->
+                <li>
+                    <a href="#" class="fa-brands fa-facebook" aria-label="Profil Facebook">
+                        <span class="element_containeur_reseau">Facebook</span>
+                    </a>
+                </li>
+                
+                <!-- LinkedIn -->
+                <li>
+                    <a href="#" class="fa-brands fa-linkedin" aria-label="Profil LinkedIn">
+                        <span class="element_containeur_reseau">LinkedIn</span>
+                    </a>
+                </li>
+                
+                <!-- GitHub -->
+                <li>
+                    <a href="#" class="fa-brands fa-github" aria-label="Profil GitHub">
+                        <span class="element_containeur_reseau">Github</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <br>
+        
+        <!-- Copyright et crédits -->
+        <p>
+            © Copyright. Tous droits réservés. 
+            Design: <a href="#haut">Landry Tiemtoré</a>
+        </p>
+    </footer>
+
+</body>
+</html>

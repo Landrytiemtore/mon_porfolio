@@ -1,0 +1,5 @@
+# Environnement virtuel (Dossier)
+env/
+
+# Variables d'environnement / Secrets (Fichier)
+.env
