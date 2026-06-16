@@ -19,7 +19,7 @@
     
     <!-- CSS & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="static/css/portfolio.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}"/>
 
     <!-- Favicon -->
         <!--<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">-->
@@ -50,7 +50,7 @@
                 <div id="haut_page">
                     <div id="element_containeur_haut" class="image">
                         <span class="image_profil">
-                            <img src="../static/images/picOO1.png" alt="Photo de profil de Tiemtoré Emmanuel Landry" />
+                            <img src="{{ url_for('static', filename='images/picOO1.png') }}" alt="Photo de profil de Tiemtoré Emmanuel Landry" />
                         </span>
                     </div>
 
@@ -91,7 +91,7 @@
                     <div class="projet-item">
                         <article class="element_containeur_projet">
                             <a href="#" class="image featured">
-                                <img src="../static/images/power.png" alt="Capture d'écran du projet incident de Sans Francisco" />
+                                <img src="{{ url_for('static', filename='images/power.png') }}" alt="Capture d'écran du projet incident de Sans Francisco" />
                             </a>
                             <h3><a href="#">Rapport incident Sans Francisco</a></h3>
                             <p>Un rapport Power BI sur les crimes commis dans la ville de Sans Francisco.</p>
@@ -101,7 +101,7 @@
                     <div class="projet-item">
                         <article class="element_containeur_projet">
                             <a href="#" class="image featured">
-                                <img src="../static/images/output.png" alt="Capture d'écran d'analyse des sentiments" />
+                                <img src="{{ url_for('static', filename='images/output.png') }}" alt="Capture d'écran d'analyse des sentiments" />
                             </a>
                             <h3><a href="#">Rapport des sentiment sur l'Université Virtuelle du BF</a></h3>
                             <p>Rapport du ressentit des étudiants de l'UVBF vis à vis de leurs université receuillie sur Facebook.</p>
@@ -111,7 +111,7 @@
                     <div class="projet-item">
                         <article class="element_containeur_projet">
                             <a href="#" class="image featured">
-                                <img src="../static/images/pic01.png" alt="Capture d'écran du projet Lorem ipsum" />
+                                <img src="{{ url_for('static', filename='images/pic01.png') }}"  alt="Capture d'écran du projet Lorem ipsum" />
                             </a>
                             <h3><a href="#">Chat bot bancaire</a></h3>
                             <p>Chatbot bancaire d'assistance instantanée : conçu pour orienter efficacement les clients et résoudre leurs incidents en temps réel.</p>
